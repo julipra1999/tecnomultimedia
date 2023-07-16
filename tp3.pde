@@ -1,3 +1,5 @@
+//https://youtu.be/fTFIyb6q6uM
+//Pratti Julieta
 PFont fuente;
 int estado;
 PImage[] pantalla = new PImage[17];
