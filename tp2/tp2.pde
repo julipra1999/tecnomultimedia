@@ -11,18 +11,36 @@ void draw() {
   translate(400, 0);
   noStroke();
   println(mouseX, mouseY);
-  background(255);
+  rectMode(CENTER);
+  // background(255);
 
-  for ( int i = 0; i < m; i++ ) {
-    for ( int j = 0; j < m; j++ ) {
-      if ( (i+j)%2 == 0 ) {  //modulo% devuelve el resta de una división: 0 par, 1 impar
-        fill( 4, 140, 13 );
+  for (int i = 0; i < m; i++) {
+    for (int j = 0; j < m; j++) {
+      if ((i+j)%2 == 0) {  //modulo% devuelve el resta de una división: 0 par, 1 impar
+        fill(4, 140, 13);
+        rect(i*t-40, j*t-40, t, t );
       } else {
-        fill( 255 );
+        fill(255);
+        rect(i*t-40, j*t-40, t, t );
       }
-      rect(i*t-40, j*t-40, t, t );
     }
   }
-  image(ilusion, -480,0);
+  for (int i = 0; i < m; i++) {
+    for (int j = 0; j < m; j++) {
+      if ((i+j)%2 == 0) {
+        fill(255);
+        rect(i*t+20, j*t+20, t/3, t/3 );//rojo
+        fill(0);
+        rect(i*t+16, i*t+24, t/5, t/5 );
+        rect(j*t+24, j*t+16, t/5, t/5);
+      } else {
+       fill(255);
+        rect(i*t+16, i*t+24, t/5, t/5 );
+        rect(j*t+24, j*t+16, t/5, t/5);
+       }
+    }
+  }
+
+  image(ilusion, -480, 0);
   popMatrix();
 }
