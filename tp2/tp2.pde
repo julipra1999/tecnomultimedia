@@ -1,11 +1,13 @@
+//Pratti, Julieta
+// 83917/3
+//https://youtu.be/obAOKjLgqSA
+
 PImage ilusion;
 color c1, c2, c3;
 
 void setup() {
   size(800, 400);
   ilusion = loadImage("ilusion.jpeg");
- // m = 12 ;
- // t = 40;
   c1 = color(255);
   c2 = color(0);
   c3 = color(4, 140, 13);
