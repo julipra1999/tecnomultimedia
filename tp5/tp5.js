@@ -1,3 +1,5 @@
+//https://youtu.be/mt8fDLtOiRA
+
 let objJuego;
 let pantallaPerdiste = false;
 let pantallaGanaste = false;
